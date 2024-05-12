@@ -1,3 +1,17 @@
 .middle__img1{
     left: 9.5rem;
 }
+.middle__game-footer{
+    background-color: $trans-blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-top: $blue-shadow 2px solid;
+ margin-top: 1rem;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+}

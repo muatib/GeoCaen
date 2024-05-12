@@ -13,15 +13,13 @@
   position: sticky;
   width: 100%;
   z-index: 2;
-  
 }
 .header__logo {
   position: relative;
   top: 1rem;
-  left: 2.3rem;
-  filter: drop-shadow($clear-blue 1px 1px );
+  left: 15%;
+  filter: drop-shadow($clear-blue 1px 1px);
 }
-
 
 // MENU BURGER
 
@@ -38,7 +36,7 @@
   .menu__toggle-bar:before,
   .menu__toggle-bar:after {
     background: white;
-    filter: drop-shadow($red 1px 1px );
+    filter: drop-shadow($red 1px 1px);
     display: block;
     height: 2px;
     opacity: 1;
@@ -70,13 +68,11 @@
       top: 0px;
       transform: rotate(90deg);
       width: 27px;
-     
     }
     .menu__toggle-bar {
       transform: rotate(-45deg);
       top: 13px;
       width: 27px;
-      
     }
     .menu__toggle-bar:after {
       top: 0px;
@@ -118,5 +114,55 @@
     font-size: 32px;
     margin-bottom: 30px;
     text-decoration: none;
+  }
+}
+@media screen and (max-width: 899px){
+  .nav__lg-lst{
+    display: none;
+  }
+}
+@media screen and (min-width: 550px) {
+  .header__logo {
+    position: absolute;
+    top: 1rem;
+    left: 45%;
+    filter: drop-shadow($clear-blue 1px 1px);
+  }
+
+  .menu__toggle {
+    position: relative;
+
+    height: 27px;
+    width: 30px;
+    overflow: visible;
+    z-index: 2;
+  }
+  
+  
+}
+@media screen and (min-width: 900px) {
+  .menu__toggle {
+    display: none;
+  }
+  .header__img{
+    display: none;
+  }
+  .header__logo{
+    left: 5%;
+  }
+  
+  .nav__lg-lst{
+    position: absolute;
+    left: 40%;
+    bottom: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+  }
+  .nav__lnk{
+    margin: 0 2rem 0 1rem;
+    font-size: 1.5rem;
+    
   }
 }
