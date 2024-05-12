@@ -1,0 +1,16 @@
+:root {
+  font-size: 16px;
+  @font-face {
+    font-family: RobotoCondensed;
+    src: url(/font/RobotoCondensed-Regular.ttf);
+  }
+}
+body {
+  background-color: $background;
+  color: white;
+  overflow-x: hidden;
+  font-family: "RobotoCondensed", sans-serif;
+}
+.link{
+  text-decoration: none;
+}

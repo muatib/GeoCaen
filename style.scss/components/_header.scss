@@ -1,0 +1,122 @@
+.header__container {
+  background-color: $trans-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom: $blue-shadow 2px solid;
+  top: 0;
+  left: 0;
+  position: sticky;
+  width: 100%;
+  z-index: 2;
+  
+}
+.header__logo {
+  position: relative;
+  top: 1rem;
+  left: 2.3rem;
+  filter: drop-shadow($clear-blue 1px 1px );
+}
+
+
+// MENU BURGER
+
+.menu__toggle {
+  height: 27px;
+  width: 30px;
+  margin: 50px;
+  position: relative;
+  overflow: visible;
+  z-index: 2;
+  left: 2.5rem;
+
+  .menu__toggle-bar,
+  .menu__toggle-bar:before,
+  .menu__toggle-bar:after {
+    background: white;
+    filter: drop-shadow($red 1px 1px );
+    display: block;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+
+  .menu__toggle-bar:before,
+  .menu__toggle-bar:after {
+    content: "";
+  }
+  .menu__toggle-bar:before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+  }
+  .menu__toggle-bar {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+  }
+  .menu__toggle-bar:after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+  }
+  &.close {
+    .menu__toggle-bar:before {
+      top: 0px;
+      transform: rotate(90deg);
+      width: 27px;
+     
+    }
+    .menu__toggle-bar {
+      transform: rotate(-45deg);
+      top: 13px;
+      width: 27px;
+      
+    }
+    .menu__toggle-bar:after {
+      top: 0px;
+      left: 0;
+      transform: rotate(90deg);
+      opacity: 0;
+      width: 0;
+    }
+  }
+}
+// OVERLAY MENU BURGER
+
+#menu {
+  z-index: 1;
+  min-width: 100%;
+  min-height: 70%;
+  position: fixed;
+  top: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding-top: 20px;
+  transition: all 0.2s ease-in-out;
+
+  &.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0.932);
+    border-radius: 1rem;
+  }
+  .menu__container {
+    padding: 0;
+  }
+  .menu__container-lnk {
+    color: $gold;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+}

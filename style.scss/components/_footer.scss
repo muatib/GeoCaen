@@ -1,0 +1,25 @@
+.footer {
+  background-color: $trans-blue;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-top: $blue-shadow 2px solid;
+  margin-top: 2rem;
+  height: fit-content;
+}
+.footer__icn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__txt {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+}
+.footer__icn-img {
+  width: 2rem;
+}

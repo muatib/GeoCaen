@@ -1,0 +1,159 @@
+.game__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.game__form-txt {
+  width: 85%;
+  height: 5rem;
+  border-radius: 1rem;
+
+  margin-bottom: 2.5rem;
+  text-align: center;
+  border: black 2px solid;
+}
+
+.game__form-wrong {
+  width: 85%;
+  height: 5rem;
+  border-radius: 1rem;
+  margin: -1rem 0 3rem 0;
+  text-align: center;
+  border: $red 4px solid;
+  background-image: url(/img/warning-1-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  background-position: 8%;
+  &.game__form-wrong::placeholder {
+    color: $red;
+    font-weight: 900;
+  }
+}
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-1rem);
+  }
+  50% {
+    transform: translateX(1rem);
+  }
+  75% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.wrong__txt {
+  text-align: center;
+  background: $background;
+  padding: 0.2rem;
+  color: $red;
+  width: fit-content;
+  position: relative;
+  bottom: 1rem;
+  right: 12rem;
+}
+.wrong__txt--disp {
+  text-align: center;
+  background: $background;
+  padding: 0.2rem;
+  color: $red;
+  width: fit-content;
+  position: relative;
+  bottom: 1rem;
+  left: 5.5rem;
+}
+
+.popup,
+.popupk,
+.popupWrong {
+  display: none;
+  position: fixed;
+  padding: 3rem;
+  width: 280px;
+  left: 50%;
+  margin-left: -8.5rem;
+  height: fit-content;
+  top: 50%;
+  margin-top: -10rem;
+  background: $background;
+  border-radius: 1rem;
+  z-index: 20;
+  border: $red 2px solid;
+  // filter: drop-shadow($red 2px 2px 4px);
+}
+.popupGood {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-top: $clear-blue 2px solid;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease, transform 3s ease;
+}
+
+.popupGood.show {
+  opacity: 2;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(-10px);
+}
+#popup:before,
+#popupk:before,
+#incorrectPopup:before,
+#correctPopup:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: $trans-blue;
+  border-radius: 1rem;
+  z-index: -1;
+  padding: 3rem;
+}
+.popup__txt {
+  color: #fff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.popupk__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popupk__btn{
+  width: 7rem;
+  margin: 1rem 0.5rem 0.5rem;
+}
+
+.popupk__txt {
+  text-align: center;
+  font-weight: 800;
+}
+.popupk__img {
+  position: relative;
+  left: 3.5rem;
+  top: 1.5rem;
+}
+.pop__img {
+  left: 4rem;
+  margin-bottom: 1rem;
+}
+.game__form-btn{
+  margin-bottom: 8rem;
+}

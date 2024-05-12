@@ -1,0 +1,32 @@
+[
+  {
+    "text": "Rendez vous à l'église Saint Pierre située au boulevard des Alliés, la rumeur raconte que le trésor de ces lieus pieux est dissimulé à l'intérieur de l'objet perché sur la plus haute pointe de l'église, de quelle forme est cet objet renfermant ces richesses ?",
+    "answer": "un coq",
+    "clue": "fier animal chante au petit matin"
+  },
+  {
+"text": "A présent rendez vous dans une des plus ancienne rue de Caen, la rue du Vaugueux, ici le temps et l'histoire ont fait leur oeuvre, métamorphosant le paysage de cette rue mysthique, on raconte qu'un des trésors caché du Duc de Normadie serait ingénieusement dissimulé dans une des rares demeures en colombages restantes. Combien de ces deumeures reste t'il dans cette rue ?", 
+"answer": "5",
+"clue": "impair plus petit que 10"
+  },
+{
+    "text": "Dirigez vous rue Saint Pierre, cherchez les innébranlables deumeures à pans de bois, ces majestueuses demeures agées de cinq ciècles seraient gardienne d'un des trésor du duc de Normandie, il est de coutume de dire qu'il serait indiqué par un X, combien de croix formés par les colombages sont présentes ?",
+    "answer": "12",
+    "clue": "autant de coup de cloche lorsque le soleil est au zénith"
+},
+{
+"text": "Il vous faut à présent aller à l'église Saint Jean, un de nos mystérieux trésor y serait dissimulé, et à en croire les rumeurs dans la partie innachevée de l'édifice, combien de gargouilles sont présentes sur cette parite de l'église ?",
+"answer": "9",
+"clue": "impair plus petit que 10"
+},
+{
+  "text": "Remontez maintent la rue Saint Jean en direction du chateau, en son enceinte se dresse une mystérieuse église qui une fois de plus selon les rumeurs refermerait une des richesse depuis longtemps convoitées, pour espéré le trouver il vous faudra d'abord deviner le nom de ce lieu de culte",
+  "answer": "Saint Georges",
+  "clue" : "elle porte le même que celui qui à térassé le dragon"
+},
+{
+  "text": "Il est maintenant temps de rejoindre le lieu final de cette quête l'abbaye aux Hommes, Le plus grand trésor de Guillaume y serait dissimulé, des textes anciens suggérent qu'il serait au plus prés des cieux, combien de grands clochers posséde l'Abbaye aux Hommes ?",
+  "answer": "2",
+  "clue ": "en duo"
+}
+]
