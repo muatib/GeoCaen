@@ -8,27 +8,26 @@ function init() {
       displayContent();
     });
 }
+document.addEventListener("DOMContentLoaded", init);
 
 function displayContent() {
-  let currentLoreIndex = parseInt(localStorage.getItem("currentLoreIndex")) || 0;
-  
+  let currentLoreIndex =
+    parseInt(localStorage.getItem("currentLoreIndex")) || 0;
+
   if (loreData && loreData.length > 0) {
     const middleTxt = document.querySelector("#middle__txt");
-    const loreContent = loreData[currentLoreIndex].text || loreData[currentLoreIndex].lore;
+    const loreContent =
+      loreData[currentLoreIndex].text || loreData[currentLoreIndex].lore;
     middleTxt.innerText = loreContent;
 
-    // Increment the index for the next lore text
     currentLoreIndex++;
     if (currentLoreIndex >= loreData.length) {
-      currentLoreIndex = 0; // Reset to 0 when reaching the end of the lore data
+      currentLoreIndex = 0;
     }
 
-    // Store the current index in local storage
     localStorage.setItem("currentLoreIndex", currentLoreIndex.toString());
   }
 }
-
-document.addEventListener("DOMContentLoaded", init);
 
 window.onload = function () {
   displayContent();

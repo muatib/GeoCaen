@@ -12,6 +12,7 @@ function init() {
       displayContent();
     });
 }
+document.addEventListener("DOMContentLoaded", init);
 
 function displayContent() {
   if (data) {
@@ -38,16 +39,6 @@ function getAnswer() {
   }
 }
 
-function showPopup(popupId) {
-  const popup = document.getElementById(popupId);
-  if (popup) {
-    popup.classList.add("show");
-  }
-}
-
-/**
- * Moves to the next question in the data.
- */
 function nextQuestion() {
   currentIndex++;
   if (currentIndex >= data.length) {
@@ -56,7 +47,7 @@ function nextQuestion() {
   displayContent();
 }
 
-document.addEventListener("DOMContentLoaded", init);
+
 
 const submitButton = document.querySelector("#submitButton");
 submitButton.addEventListener("click", getAnswer);
@@ -73,7 +64,12 @@ const closeIncorrectPopupButton = document.querySelector(
 closeIncorrectPopupButton.addEventListener("click", function () {
   closePopup("incorrectPopup");
 });
-
+function showPopup(popupId) {
+  const popup = document.getElementById(popupId);
+  if (popup) {
+    popup.classList.add("show");
+  }
+}
 function closePopup(popupId) {
   const popup = document.getElementById(popupId);
   if (popup) {
